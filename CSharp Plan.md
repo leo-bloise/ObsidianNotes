@@ -19,7 +19,7 @@
 | Fri | Job Applications / GitHub polish    | 1 hr      |
 | Sat | Project Dev + Refactor              | 3 hrs     |
 | Sun | REST / Clean Arch / Mock Interviews | 2 hrs     |
-Test
+
 ---
 
 ## 📌 Phase 1: Foundations + First Project (Weeks 1–4)
