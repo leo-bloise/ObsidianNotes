@@ -10,16 +10,16 @@
 
 ## 📅 Weekly Structure
 
-| Day   | Focus Area                           | Time          |
-|--------|----------------------------------------|-----------------|
-| Mon    | DS&A Practice (Review)                | 1–1.5 hrs       |
-| Tue    | New DS&A or System Design Topic       | 1–1.5 hrs       |
-| Wed    | C# Language & .NET Concepts           | 1.5 hrs         |
-| Thu    | Project Implementation (API/Arch)     | 2 hrs           |
-| Fri    | Job Applications / GitHub polish      | 1 hr            |
-| Sat    | Project Dev + Refactor                | 3 hrs           |
-| Sun    | REST / Clean Arch / Mock Interviews   | 2 hrs           |
-
+| Day | Focus Area                          | Time      |
+| --- | ----------------------------------- | --------- |
+| Mon | DS&A Practice (Review)              | 1–1.5 hrs |
+| Tue | New DS&A or System Design Topic     | 1–1.5 hrs |
+| Wed | C# Language & .NET Concepts         | 1.5 hrs   |
+| Thu | Project Implementation (API/Arch)   | 2 hrs     |
+| Fri | Job Applications / GitHub polish    | 1 hr      |
+| Sat | Project Dev + Refactor              | 3 hrs     |
+| Sun | REST / Clean Arch / Mock Interviews | 2 hrs     |
+Test
 ---
 
 ## 📌 Phase 1: Foundations + First Project (Weeks 1–4)
