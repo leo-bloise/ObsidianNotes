@@ -1,61 +1,107 @@
-# ✅ Phase 1 Mastery Checklist (Weeks 1–4)
+# Week 1 & 2 Study Plan — Java Core + SQL Basics + Easy DSA
 
-## 🟦 C# Language & .NET Basics
-- [x] Understand basic syntax (`var`, `int`, `string`, etc.)
-- [x] Use control structures (`if`, `switch`, loops)
-- [x] Create and use **classes** and **objects**
-- [x] Implement **interfaces** and **inheritance**
-- [ ] Use **LINQ** to filter, map, and sort data
-- [ ] Handle exceptions with `try`/`catch`
-- [ ] Use `async`/`await` for asynchronous methods
-- [ ] Understand **nullables** and null safety
+---
 
-## 🟦 ASP.NET Core Minimal API
-- [x] Scaffold a Minimal API using `.NET CLI` or Visual Studio
-- [ ] Handle all major HTTP methods (GET, POST, PUT, DELETE)
-- [ ] Perform model binding with route/query/body params
-- [ ] Return proper responses (`Ok()`, `BadRequest()`, etc.)
-- [ ] Set up and test **Swagger UI**
+## Schedule Overview
 
-## 🟦 Entity Framework Core (EF Core)
-- [x] Set up `DbContext` and `DbSet<T>`
-- [x] Connect to SQLite or InMemory DB
-- [ ] Perform basic **CRUD** operations
-- [ ] Use migrations (if working with SQLite)
-- [ ] Seed initial test data
+| Day           | Study Hours                       |
+| ------------- | --------------------------------- |
+| Sunday        | 4 hours (review + light projects) |
+| Monday–Friday | 2.5–3 hours (theory + practice)   |
+| Saturday      | 8 hours (deep dive + projects)    |
 
-## 🟦 Dependency Injection
-- [x] Register services using `AddScoped`, `AddSingleton`, etc.
-- [x] Inject services into endpoints or constructors
-- [x] Know when to use each DI lifetime (Singleton vs Scoped)
+---
 
-## 🟦 Tooling & Productivity
-- [x] Use `.NET CLI` (`dotnet new`, `run`, `add package`)
-- [x] Navigate and debug using **Visual Studio** or **VS Code**
-- [x] Install and manage **NuGet packages**
-- [x] Use breakpoints and watches to debug C# code
+# Week 1
 
-## 🟦 Data Structures & Algorithms (DS&A)
-- [ ] Solve 3–5 Easy problems per week on LeetCode
-- [ ] Master:
-  - [ ] Arrays (search, reverse, duplicates)
-  - [ ] Strings (palindromes, anagrams)
-  - [ ] HashMaps / Dictionaries (count, lookups)
-  - [ ] Two Pointers (start/end technique)
-  - [ ] Sliding Window (max sum, subarrays)
+### Monday to Friday (2.5–3 hours daily)
 
-## 🟦 Project 1: Task Manager API
-- [x] Set up a working ASP.NET Core Minimal API
-- [ ] Implement CRUD endpoints for tasks
-- [ ] Use EF Core to persist tasks
-- [ ] Validate input (e.g., empty task names)
-- [ ] Add Swagger documentation
-- [ ] Push to GitHub with a clean README
+- [x] Java Core (1.5h)  
+  - [x] Variables, data types  
+  - [x] Control flow (if, loops)  
+  - [x] Methods  
+  - [x] OOP basics (classes, objects)  
+- [x] SQL Basics (0.75h)  
+  - [x] SELECT, INSERT, UPDATE, DELETE  
+  - [x] WHERE, ORDER BY, LIMIT  
+- [ ] DSA (0.5h)  
+  - [ ] Solve 1–2 easy array/string problems on LeetCode  
 
-## 🎯 Final Review
-Before moving to Phase 2:
-- [ ] I can build and test a complete Minimal API
-- [ ] I understand the C# language fundamentals
-- [ ] I can perform database operations using EF Core
-- [ ] I’m confident solving easy DS&A problems
-- [ ] I’ve published at least **one solid project** on GitHub
+---
+
+### Saturday (8 hours)
+
+- [x] Java OOP Deep Dive (2h)  
+  - [x] Classes & constructors  
+  - [x] Encapsulation  
+  - [x] Inheritance  
+  - [x] Interfaces  
+- [ ] Mini Project: Employee Manager CLI (2h)  
+  - [ ] Basic CRUD in memory  
+- [ ] SQL Practice (1.5h)  
+  - [ ] Write queries on sample DB (SQLite/PostgreSQL): SELECT, INSERT, UPDATE  
+- [ ] DSA Practice (1.5h)  
+  - [ ] Solve 4–5 easy LeetCode problems (arrays, hash maps)  
+- [ ] Review & Notes (1h)  
+  - [ ] Summarize learnings  
+  - [ ] Make flashcards  
+  - [ ] Plan next week  
+
+---
+
+### Sunday (4 hours)
+
+- [ ] Java Review (1h)  
+  - [ ] Revisit tough OOP topics or exceptions  
+- [ ] DSA Practice (1.5h)  
+  - [ ] Solve 2–3 easy LeetCode problems  
+- [ ] Mini Project (1.5h)  
+  - [ ] Add simple features/fixes to Employee Manager CLI  
+
+---
+
+# Week 2
+
+### Monday to Friday (2.5–3 hours daily)
+
+- [ ] Java Core & Collections (1.5h)  
+  - [ ] Collections: List, Set, Map  
+  - [ ] Loops  
+  - [ ] Exception handling  
+- [ ] SQL Basics (0.75h)  
+  - [ ] WHERE clause deep dive  
+  - [ ] Simple filtering  
+  - [ ] ORDER BY  
+- [ ] DSA (0.5h)  
+  - [ ] Solve 1–2 easy problems on strings, hash maps  
+
+---
+
+### Saturday (8 hours)
+
+- [ ] Java Collections Deep Dive (2h)  
+  - [ ] Lists, Sets, Maps usage + common methods  
+- [ ] Mini Project Enhancements (2h)  
+  - [ ] Extend Employee Manager CLI with SQLite/JDBC persistence  
+- [ ] SQL Practice (1.5h)  
+  - [ ] Write multi-step queries with WHERE + ORDER BY  
+- [ ] DSA Practice (1.5h)  
+  - [ ] Solve 4–5 problems focused on hash maps + strings  
+- [ ] Review & Notes (1h)  
+  - [ ] Flashcards  
+  - [ ] Refactor code  
+  - [ ] Prepare for Week 3  
+
+---
+
+### Sunday (4 hours)
+
+- [ ] Java Review (1h)  
+  - [ ] Practice exception handling and debugging  
+- [ ] DSA Practice (1.5h)  
+  - [ ] Solve 2–3 easy-medium problems  
+- [ ] Mini Project (1.5h)  
+  - [ ] Test Employee Manager CLI  
+  - [ ] Add basic CLI input validation  
+
+---
