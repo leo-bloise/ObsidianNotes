@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Phase 1.md",
+                "file": "🚀 10-Week Study Plan (Mid-Level CSharp Web Developer).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Phase 1"
+              "title": "🚀 10-Week Study Plan (Mid-Level CSharp Web Developer)"
             }
           }
         ]
@@ -166,11 +166,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d2372b45b4887e7",
+  "active": "c0d53e5e2995638c",
   "lastOpenFiles": [
-    "CSharp Plan.md",
-    "Java Plan.md",
+    "Plan.md",
+    "🚀 10-Week Study Plan (Mid-Level CSharp Web Developer).md",
+    "📅 Week 1 - Deep Dive and Language Core.md",
     "Phase 1.md",
+    "Java Plan.md",
     "conflict-files-obsidian-git.md",
     "Daily.md",
     "Curriculum/Tips.md",
