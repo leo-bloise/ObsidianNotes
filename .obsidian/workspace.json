@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e0b6a47bac887d6e",
+            "id": "4d2372b45b4887e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSharp Plan.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSharp Plan"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ]
@@ -166,11 +166,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e0b6a47bac887d6e",
+  "active": "4d2372b45b4887e7",
   "lastOpenFiles": [
     "Phase 1.md",
-    "CSharp Plan.md",
     "Java Plan.md",
+    "conflict-files-obsidian-git.md",
+    "CSharp Plan.md",
     "Daily.md",
     "Curriculum/Tips.md",
     "System Design/Domain Name Server.md",
