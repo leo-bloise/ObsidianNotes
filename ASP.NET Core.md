@@ -86,4 +86,4 @@ Besides, it uses the `[ApiController]` attribute, which defines:
 - Generates an automatic 400 for invalid models after Model Binding.
 	- The default body for 400 is `ValidationProblemDetails`.
 	- We can override the object, follow this [link](https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-9.0#automatic-http-400-responses)
-	- 
+- Instead of declaring the source for model binding, it can execute inference to these types.
