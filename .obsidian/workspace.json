@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "🚀 10-Week Study Plan (Mid-Level CSharp Web Developer)"
             }
+          },
+          {
+            "id": "f6510c4ccb476544",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASP.NET Core.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ASP.NET Core"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,10 +181,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d2372b45b4887e7",
+  "active": "f6510c4ccb476544",
   "lastOpenFiles": [
-    "📅 Week 1 - Deep Dive and Language Core.md",
     "🚀 10-Week Study Plan (Mid-Level CSharp Web Developer).md",
+    "ASP.NET Core.md",
+    "📅 Week 1 - Deep Dive and Language Core.md",
     "Plan.md",
     "Phase 1.md",
     "Java Plan.md",
