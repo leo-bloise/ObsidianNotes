@@ -81,3 +81,6 @@ public class UsersController : ControllerBase
 In this case, we have the following happening:
 - The route is defined with `Route` attribute on top of the controller class and it uses token replacement for defining the route. In this case, it would be `users`. You have other options for this, check [this link](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-9.0#token-replacement-in-route-templates-controller-action-area).
 - The route is combined with `HttpGet`. It does not declare any kind of route, so it'd be `\` and, as it's an `HttpGet`, it would only accept `GET requests`.
+Besides, it uses the `[ApiController]` attribute, which defines:
+- Attribute Routing as a requirement, it does not allow conventional routing.
+- Generates an automatic 400 for invalid models after Model Binding.
