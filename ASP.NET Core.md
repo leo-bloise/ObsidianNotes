@@ -24,7 +24,60 @@ app.Run();
 
 If you want to create web applications without a class called `Startup`, you can use the `WebApplication` to create an `WebApplicationBuilder` and it'll build to you a `WebApplication` instance.
 
+> ASP.NET Core is a modular framework, so the building process of an ASP.NET Core host involves adding services to the host and configuring them. We have a bunch of methods that adds a set of services to perform a specific task and we need to configuring them after building the app. Each kind of APP has its own set of capabilities needed and you must go through the documentation to learn them.
 ## Controller-Based APIs
 
-Controller-Based APIs are HTTP APIs that uses the MVC pattern to handle the requests. Every controller must inherit from `ControllerBase`. It provides a set of methods and properties to handle HTTP requests.
+Controller-Based APIs are HTTP APIs that uses the MVC pattern to handle the requests. Every controller must inherit from `ControllerBase`. It provides a set of methods and properties to handle HTTP requests. Besides, you must configure the controllers and map them like this:
 
+```c#
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers();
+var app = builder.Build();
+app.MapControllers();
+app.Run();
+```
+
+`AddControllers` add services related to controllers, such as Model Binding and validation, which involves formatting and stuff, but it does not add support for `views`, for example. In this case, we'll be using attribute routing. 
+
+Attribute routing allows us to specify the route to something through Attributes. They can be specified using the `Http VERB` or only the URL route:
+
+```c#
+using Microsoft.AspNetCore.Mvc;  
+  
+namespace TaskManager.Controllers;  
+  
+[ApiController]  
+public class UsersController : ControllerBase  
+{  
+    [Route("/users")]  
+    public string Get()  
+    {        
+	    return "Hello World";  
+    }
+}
+```
+
+In this case, you can reach the `Get` method (called `Action`) through any http VERB and using, for example: `GET https://example.com/users`
+
+If you want to specify the HTTP VERB, you can filter also by the HTTP Verb like this:
+
+```c#
+using Microsoft.AspNetCore.Mvc;  
+  
+namespace TaskManager.Controllers;  
+  
+[ApiController]  
+[Route("[controller]")]
+public class UsersController : ControllerBase  
+{  
+    [HttpGet()]  
+    public string Get()  
+    {        
+	    return "Hello World";  
+    }
+}
+```
+
+In this case, we have the following happening:
+- The route is defined with `Route` attribute on top of the controller class and it uses token replacement for defining the route. In this case, it would be `users`. You have other options for this, check [this link](https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-9.0#token-replacement-in-route-templates-controller-action-area).
+- The route is combined with `HttpGet`. It does not declare any kind of route, so it'd be `\` and, as it's an `HttpGet`, it would only accept `GET requests`.
