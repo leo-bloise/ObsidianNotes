@@ -84,4 +84,6 @@ In this case, we have the following happening:
 Besides, it uses the `[ApiController]` attribute, which defines:
 - Attribute Routing as a requirement, it does not allow conventional routing.
 - Generates an automatic 400 for invalid models after Model Binding.
-Stopped here: https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-9.0#automatic-http-400-responses
+	- The default body for 400 is `ValidationProblemDetails`.
+	- We can override the object, follow this [link](https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-9.0#automatic-http-400-responses)
+	- 
