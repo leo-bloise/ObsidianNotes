@@ -89,4 +89,29 @@ Besides, it uses the `[ApiController]` attribute, which defines:
 - Instead of declaring the source for model binding, it can execute inference to these types.
 	- Complex types would be parsed from body, like using the `[FromBody]` data attribute.
 ### Model Validation
-Model validation is performed accordingly to the data attributes attached to the properties on a class. All validations come from `System.ComponentModel.DataAnnotations`, but you can create your own validations.
+Model validation is performed accordingly to the data attributes attached to the properties on a class. All validations come from `System.ComponentModel.DataAnnotations`, but you can create your own validations. 
+For example, if you want to override the default problem details, you can do:
+```C#
+using Microsoft.AspNetCore.Mvc;  
+using Microsoft.AspNetCore.Mvc.ModelBinding;  
+using TaskManager.Controllers.DTOs.Output;  
+  
+namespace TaskManager.Infra;  
+  
+public static class CustomProblemDetailsFactory  
+{  
+    public static void ConfigureProblemDetails(this WebApplicationBuilder builder)  
+    {        builder.Services.Configure<ApiBehaviorOptions>(options =>  
+        {  
+            options.InvalidModelStateResponseFactory = context =>  
+            {  
+                Dictionary<string, string[]> errors = new Dictionary<string, string[]>();  
+                ModelStateDictionary modelState = context.ModelState;  
+                foreach(string key in modelState.Keys)  
+                {                    string[] keyErrors = modelState[key]?.Errors.Select(error => error.ErrorMessage).ToArray() ?? [];  
+                    if (keyErrors.Length != 0)  
+                    {                        errors.Add(key, keyErrors);  
+                    }                }                return new UnprocessableEntityObjectResult(  
+                    new ApiResponseData<Dictionary<string, string[]>>("Invalid data provided", errors)  
+                    );            };        });    }}
+```
