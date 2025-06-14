@@ -4,9 +4,9 @@
 ---
 ## ✅ Goals
 
-- [ ] Master the syntax and structure of C#
-- [ ] Understand how OOP works in C# (classes, interfaces, inheritance, etc.)
-- [ ] Use basic data structures like arrays, lists, and dictionaries
+- [x] Master the syntax and structure of C#
+- [x] Understand how OOP works in C# (classes, interfaces, inheritance, etc.)
+- [x] Use basic data structures like arrays, lists, and dictionaries
 - [ ] Learn LINQ basics
 - [ ] Get comfortable writing and debugging simple C# programs
 - [ ] Practice daily Leetcode problems in C#
@@ -39,11 +39,11 @@
 - [ ] Nullable reference types (`?`, `??`, `??=`, null-coalescing)
 ### Object-Oriented Programming in C#
 
-- [ ] Classes, structs, and objects
-- [ ] Access modifiers: `public`, `private`, `protected`, `internal`
-- [ ] Constructors and destructors
-- [ ] Interfaces and abstract classes
-- [ ] Method overriding and overloading
+- [x] Classes, structs, and objects
+- [x] Access modifiers: `public`, `private`, `protected`, `internal`
+- [x] Constructors and destructors
+- [x] Interfaces and abstract classes
+- [x] Method overriding and overloading
 ### LINQ Basics
 
 - [ ] `Where`, `Select`, `FirstOrDefault`, `Any`, `Count`
