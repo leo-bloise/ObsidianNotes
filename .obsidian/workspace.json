@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASP.NET Core.md",
+                "file": "Entity Framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ASP.NET Core"
+              "title": "Entity Framework"
             }
           }
         ],
@@ -183,8 +183,9 @@
   },
   "active": "f6510c4ccb476544",
   "lastOpenFiles": [
-    "🚀 10-Week Study Plan (Mid-Level CSharp Web Developer).md",
     "ASP.NET Core.md",
+    "Entity Framework.md",
+    "🚀 10-Week Study Plan (Mid-Level CSharp Web Developer).md",
     "📅 Week 1 - Deep Dive and Language Core.md",
     "Plan.md",
     "Phase 1.md",
