@@ -88,3 +88,5 @@ Besides, it uses the `[ApiController]` attribute, which defines:
 	- We can override the object, follow this [link](https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-9.0#automatic-http-400-responses)
 - Instead of declaring the source for model binding, it can execute inference to these types.
 	- Complex types would be parsed from body, like using the `[FromBody]` data attribute.
+### Model Validation
+Model validation is performed accordingly to the data attributes attached to the properties on a class. All validations come from `System.ComponentModel.DataAnnotations`, but you can create your own validations.
